@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-teman67-djangoblog-g2vsc3hcfzu.ws-eu106.gitpod.io']
-ALLOWED_HOSTS = ['django-blog-amir.herokuapp.com', 'localhost', '8000-teman67-djangoblog-g2vsc3hcfzu.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['django-blog-amir-c784538740ff.herokuapp.com', 'localhost', '8000-teman67-djangoblog-g2vsc3hcfzu.ws-eu106.gitpod.io']
 
 
 # Application definition
