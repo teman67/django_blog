@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-teman67-djangoblog-g2vsc3hcfzu.ws-eu106.gitpod.io']
-ALLOWED_HOSTS = ['django-blog-amir.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['django-blog-amir.herokuapp.com', 'localhost', '8000-teman67-djangoblog-g2vsc3hcfzu.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -135,6 +135,8 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
  
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR , 'statticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
